@@ -6,4 +6,4 @@ Funções para atualizar as taxas de correção monetária para cálculos de dé
 
 **Referências**
 
-https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf
+- [Tabela TJSP em *pdf*](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf)
