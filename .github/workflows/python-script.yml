@@ -6,7 +6,7 @@ name: py
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Runs at 00:00 UTC everyday
+    - cron: "*/10 * * * *" # Runs at 00:00 UTC everyday
 
 jobs:
   build:
@@ -30,14 +30,10 @@ jobs:
           pip install -r requirements.txt
 
       # Run the run.py to get the latest data
-      - name: execute py script 
-        run: |
-          python ./src/update_tjsp_taxas.py
-
-      # Run the run.py to get the latest data
-      - name: execute py script 
+      - name: execute py script
         run: |
           python ./src/paths.py
+          python ./src/update_tjsp_taxas.py
 
       # Git Add and Commit
       - name: commit files
@@ -53,3 +49,4 @@ jobs:
         with:
           github_token: ${{ secrets.API_TOKEN_GITHUB }} # GITHUB_TOKEN
           branch: ${{ github.ref }}
+          
