@@ -34,15 +34,17 @@ jobs:
         run: |
           python ./src/update_tjsp_taxas.py
 
+      # Git Add and Commit
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "update data" -a
-          
+          git commit -m "Update Data usingo GitAction" -a
+        
+      # Git Push
       - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          github_token: ${{ secrets.API_TOKEN_GITHUB }} # GITHUB_TOKEN
+          branch: ${{ github.ref }}
