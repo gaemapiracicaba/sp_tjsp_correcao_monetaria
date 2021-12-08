@@ -1,0 +1,35 @@
+name: Post
+
+on:
+  push:
+    branches: [ main ]
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pushes POST to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'docs/post'
+          user-name: michelmetran
+          user-email: michelmetran@gmail.com
+
+          destination-github-username: 'gaemapiracicaba'
+          destination-repository-name: 'gaemapiracicaba.github.io'
+          target-branch: master
+          target-directory: /_posts/correcao_monetaria
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF   
+
+
+
+# This is a basic workflow to help you get started with Actions
+# https://github.com/cpina/push-to-another-repository-output
+# https://github.com/marketplace/actions/push-directory-to-another-repository
+# https://dev.to/tomassirio/make-changes-on-repository-a-while-modifying-repository-b-github-actions-is-here-50g8
