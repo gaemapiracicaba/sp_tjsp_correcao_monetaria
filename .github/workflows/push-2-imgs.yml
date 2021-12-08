@@ -1,0 +1,29 @@
+name: Imgs
+
+on:
+  workflow_run:
+    workflows:
+      - Post
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pushes IMGS to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'docs/imgs'
+          user-name: michelmetran
+          user-email: michelmetran@gmail.com
+
+          destination-github-username: 'gaemapiracicaba'
+          destination-repository-name: 'gaemapiracicaba.github.io'
+          target-branch: master
+          target-directory: /assets/correcao_monetaria/imgs
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
