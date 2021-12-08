@@ -34,6 +34,11 @@ jobs:
         run: |
           python ./src/update_tjsp_taxas.py
 
+      # Run the run.py to get the latest data
+      - name: execute py script 
+        run: |
+          python ./src/paths.py
+
       # Git Add and Commit
       - name: commit files
         run: |
