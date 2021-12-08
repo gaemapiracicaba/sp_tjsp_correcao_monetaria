@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "Update Data usingo GitAction" -a
+          git commit -m "Update Data using GitAction" -a
         
       # Git Push
       - name: push changes

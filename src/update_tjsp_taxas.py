@@ -90,18 +90,26 @@ def create_dataframe_tjsp_debitos(input_path):
     return df
 
 
-# Create Directory and Save file
-input_path = os.path.join('..', 'data')
-os.makedirs(input_path, exist_ok=True)
+if __name__ == "__main__":
+    print('main!')
+    
+    # Create Directory and Save file
+    #input_path = os.path.join('..', 'data')
+    input_path = os.path.join('data')
+    print('Teste 1')
+    print(os.path.isdir('data'))
+    os.makedirs(input_path, exist_ok=True)
+    print('Teste 2')
+    print(os.path.isdir('data'))
 
-# Create Dataframe
-df = create_dataframe_tjsp_debitos(input_path)
+    # Create Dataframe
+    df = create_dataframe_tjsp_debitos(input_path)
 
-# Save "tabela_debitos_judiciais"
-df.to_csv(
-    os.path.join(input_path, 'tabela_debitos_judiciais.csv'),
-    index=False,
-    decimal=',',
-)
+    # Save "tabela_debitos_judiciais"
+    df.to_csv(
+        os.path.join(input_path, 'tabela_debitos_judiciais.csv'),
+        index=False,
+        decimal=',',
+    )
 
-print("Save Ok!")
+    print("Save Ok!")
