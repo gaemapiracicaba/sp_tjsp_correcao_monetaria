@@ -14,6 +14,8 @@ O presente repositório visa criar uma função para converter esse arquivo *.pd
 
 https://docs.google.com/spreadsheets/d/1xOH1QN8qsZ3-_u6p1dbhIZ2N4IvSBbMJucM1BhXf8Sw/edit#gid=0
 
+https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv
+
 <br>
 
 ----

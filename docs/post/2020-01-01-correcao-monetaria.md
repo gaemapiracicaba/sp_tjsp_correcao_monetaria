@@ -26,9 +26,9 @@ header:
       url: "https://sistemainfoaguas.cetesb.sp.gov.br/"
 ---
 
-O Sistema de Informação [InfoÁguas](https://sistemainfoaguas.cetesb.sp.gov.br/) é uma iniciativa da CETESB<!--more-->, que visa disponibilizar ao público interessado informações sobre a qualidade das águas do Estado de São Paulo. Por meio do sistema, é possível ter acesso aos resultados dos parâmetros analisados sistematicamente pela CETESB em seu Programa de Monitoramento de Águas Superficiais, nos mais de 600 pontos monitorados desde a década de 70.
+O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. Faz isso por meio de um arquivo em formato ["TabelaDebitosJudiciais.pdf"](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
-Os pontos de monitoramento são apresentados no mapa abaixo, bem como os dados de monitoramento, os quais são acessados ao clicar no ponto de interesse.
+Recentemenete escrevi alguns códigos para obter esses dados e disponibiliza-los de maneira mais prática, buscando fazer os cálculos judicias.
 
 <br>
 
