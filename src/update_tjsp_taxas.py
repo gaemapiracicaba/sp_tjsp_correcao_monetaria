@@ -103,4 +103,3 @@ df.to_csv(
     index=False,
     decimal=',',
 )
-

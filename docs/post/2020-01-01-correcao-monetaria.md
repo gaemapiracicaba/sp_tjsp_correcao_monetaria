@@ -7,14 +7,14 @@ toc: false
 categories:
   - blog
 tags:
-  - recursos hídricos
-  - qualidade
-  - enquadramento
-  - água bruta
+  - débitos judiciais
+  - correção monetária
+  - tjsp
+  - multas
 classes: wide
 author: Michel Metran
 comments: false
-excerpt: Sistema para acesso aos dados de qualidade de água superficial (dos rios)
+excerpt: Taxas para calcular a correção monetária de multas e débitos judiciais
 share: false
 related: false
 header:

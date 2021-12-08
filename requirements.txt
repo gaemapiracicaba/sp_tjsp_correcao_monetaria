@@ -1,0 +1,4 @@
+requests>=2.25.1
+tabula-py>=2.2.0
+pandas>=1.1.0
+
