@@ -7,7 +7,7 @@ O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) dispo
 
 <br>
 
-O presente repositório visa criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica.
+O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) visa criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
 
 <br>
 
@@ -34,6 +34,4 @@ Visando auxiliar essa etapa, [_já foi criada uma tabela com a função_](https:
 <br>
 
 ### *Microsoft Excel*
-
-
 
