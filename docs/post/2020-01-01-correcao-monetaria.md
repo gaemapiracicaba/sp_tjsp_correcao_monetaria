@@ -20,7 +20,7 @@ related: false
 header:
   overlay_image: /assets/correcao_monetaria/imgs/sasun-bughdaryan.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Photo by <a href="https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasun Bughdaryan</a> on <a href="https://unsplash.com/s/photos/judge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>"
+  caption: "Photo by [**Sasun Bughdaryan**](https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/judge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
   actions:
     - label: "GitHub"
       url: "https://github.com/gaemapiracicaba/correcao_monetaria"
