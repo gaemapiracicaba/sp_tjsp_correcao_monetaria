@@ -30,10 +30,10 @@ jobs:
           pip install -r requirements.txt
 
       # Run the run.py to get the latest data
+      # python ./src/update_tjsp_taxas.py      
       - name: execute py script
         run: |
           python ./src/paths.py
-          python ./src/update_tjsp_taxas.py
 
       # Git Add and Commit
       - name: commit files
