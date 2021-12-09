@@ -62,7 +62,7 @@ Visando auxiliar essa etapa, **já foi criada uma tabela com a função**, basta
 
 No *Microsoft Excel* é possível também manter o arquivo atualizado em uma aba, por meio dos passos abaixo:
 
-![](./docs/imgs/excel.gif)
+![](/assets/correcao_monetaria/imgs/excel.gif)
 
 <br>
 
