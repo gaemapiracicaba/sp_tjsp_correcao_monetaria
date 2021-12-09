@@ -89,5 +89,5 @@ def create_dataframe_tjsp_debitos(input_path):
     print(df.tail(3))
     return df
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     print('main!')

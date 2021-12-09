@@ -25,5 +25,5 @@ df.to_csv(
     decimal=',',
 )
 
-if __name__ == "__main__":
-    print('main!')
+if __name__ == '__main__':
+    print('Aqui é o arquivo paths.py')
