@@ -6,7 +6,7 @@ name: Py
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # Runs at 00:00 UTC everyday
+    - cron: '*/50 * * * *' # Runs at 00:00 UTC everyday
 
 jobs:
   build:
