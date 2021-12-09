@@ -14,9 +14,9 @@ O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapira
 
 ## Como Usar?
 
-O arquivo _.csv_ disponível no servidor é atualizado todas as terças-feiras, as 7h00 e fica disponível no endereço a seguir:
+O arquivo _.csv_ disponível no servidor é atualizado todas as terças-feiras e quintas, as 4h00 e fica disponível no endereço a seguir:
 
-- https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv
+- <a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" target="_blank">https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv</a>
 
 <br>
 
@@ -28,7 +28,9 @@ Uma vez que o arquivo _.csv_ está disponível em um servidor, é possível util
 
 <br>
 
-Visando auxiliar essa etapa, [_já foi criada uma tabela com a função_](https://docs.google.com/spreadsheets/d/1xOH1QN8qsZ3-_u6p1dbhIZ2N4IvSBbMJucM1BhXf8Sw/edit?usp=sharing), bastando criar uma cópia da tabela para sua conta _Google_.
+Visando auxiliar essa etapa, **já foi criada uma tabela com a função**, bastando criar uma cópia da tabela para sua conta _Google_.
+
+<a href="https://docs.google.com/spreadsheets/d/1xOH1QN8qsZ3-_u6p1dbhIZ2N4IvSBbMJucM1BhXf8Sw/edit?usp=sharing" class="btn btn--primary">*Google Spreadsheets*</a>  
 
 <br>
 

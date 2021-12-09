@@ -5,11 +5,11 @@ from datetime import datetime
 sys.path.append(os.getcwd())
 import src.update_tjsp_taxas as tjsp
 
-#print('Pasta raiz é: "{}" e tem o seguinte conteudo:\n'.format(os.getcwd()))
-#print(os.listdir(os.getcwd()))
+print('Pasta raiz é: "{}" e tem o seguinte conteudo:\n'.format(os.getcwd()))
+print(os.listdir(os.getcwd()))
 
-#print('Pasta anterior é: "{}" e tem o seguinte conteudo:\n'.format(os.path.join(os.getcwd(), '..')))
-#print(os.listdir(os.path.join(os.getcwd(), '..')))
+print('Pasta anterior é: "{}" e tem o seguinte conteudo:\n'.format(os.path.join(os.getcwd(), '..')))
+print(os.listdir(os.path.join(os.getcwd(), '..')))
 
 # Create Directory and Save file
 input_path = os.path.join('data')
