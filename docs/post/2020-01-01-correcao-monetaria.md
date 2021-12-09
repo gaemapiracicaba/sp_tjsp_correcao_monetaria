@@ -1,7 +1,7 @@
 ---
 title: "Correção Monetária"
 date: 2021-11-01T12:00:00-03:00
-last_modified_at: 2021-11-01T12:00:00-03:00
+last_modified_at: 2021-12-08T12:00:00-03:00
 excerpt_separator: "<!--more-->"
 toc: false
 categories:
@@ -14,27 +14,28 @@ tags:
 classes: wide
 author: Michel Metran
 comments: false
-excerpt: Taxas para calcular a correção monetária de multas e débitos judiciais
+excerpt: Funções para obter e atualizar as taxas do TJSP, necessárias para cálculos de correção monetária dos débitos judiciais
 share: false
 related: false
 header:
-  overlay_image: /assets/correcao_monetaria/imgs/river-min.jpg
+  overlay_image: /assets/correcao_monetaria/imgs/sasun-bughdaryan.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Foto: [**Fabricio Macedo**](https://pixabay.com/pt/users/fabriciomacedophotos-328534/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1729544)"
+  caption: "Photo by <a href="https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasun Bughdaryan</a> on <a href="https://unsplash.com/s/photos/judge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  "
   actions:
-    - label: "Mais informações"
-      url: "https://sistemainfoaguas.cetesb.sp.gov.br/"
+    - label: "GitHub"
+      url: "https://github.com/gaemapiracicaba/correcao_monetaria"
 ---
+
+# Correção Monetária de Débitos Judiciais
+
+<br>
 
 O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
-<br>
-
-O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) visa criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
+O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) objetivou criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
 
 <br>
-
----
 
 ## Como Usar?
 
@@ -60,9 +61,13 @@ Visando auxiliar essa etapa, **já foi criada uma tabela com a função**, basta
 
 ### *Microsoft Excel*
 
-... descrever...
+No *Microsoft Excel* é possível também manter o arquivo atualizado em uma aba, por meio dos passos abaixo:
+
+![](./docs/imgs/excel.gif)
 
 <br>
+
+### Outros Formatos
 
 É possível também acessar a tabela em formatos *.csv* e *.pdf* nos botões abaixo:
 

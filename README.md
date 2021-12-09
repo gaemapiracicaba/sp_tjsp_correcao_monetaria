@@ -4,13 +4,9 @@
 
 O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
-<br>
-
-O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) visa criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
+O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) objetivou criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
 
 <br>
-
----
 
 ## Como Usar?
 
@@ -36,4 +32,16 @@ Visando auxiliar essa etapa, **já foi criada uma tabela com a função**, basta
 
 ### *Microsoft Excel*
 
-... descrever...
+No *Microsoft Excel* é possível também manter o arquivo atualizado em uma aba, por meio dos passos abaixo:
+
+![](./docs/imgs/excel.gif)
+
+<br>
+
+
+### Outros Formatos
+
+É possível também acessar a tabela em formatos *.csv* e *.pdf* nos botões abaixo:
+
+<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download *csv*</a>  
+<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download *pdf*</a>
