@@ -16,9 +16,9 @@ input_path = os.path.join('data')
 os.makedirs(input_path, exist_ok=True)
 
 # Only to change
-date_time = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
-with open(os.path.join(input_path, 'readme.txt'), 'w') as f:
-    f.write('date and time: {}'.format(date_time))
+date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+with open(os.path.join(input_path, 'date.txt'), 'w') as f:
+    f.write('Data: {}'.format(date_time))
 
 # Create Dataframe
 df = tjsp.create_dataframe_tjsp_debitos(input_path)

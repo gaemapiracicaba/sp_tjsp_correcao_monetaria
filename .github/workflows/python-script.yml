@@ -2,11 +2,11 @@
 # https://github.community/t/how-to-setup-github-actions-to-run-my-python-script-on-schedule/18335/2
 # https://canovasjm.netlify.app/2020/11/29/github-actions-run-a-python-script-on-schedule-and-commit-changes/
 
-name: py
+name: Py
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # Runs at 00:00 UTC everyday
+    - cron: '*/50 * * * *' # Runs at 00:00 UTC everyday
 
 jobs:
   build:

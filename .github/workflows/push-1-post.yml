@@ -3,8 +3,11 @@ name: Post
 on:
   push:
     branches: [ main ]
-
-
+  workflow_run:
+    workflows:
+      - Py
+    types:
+      - completed
 
 jobs:
   build:
