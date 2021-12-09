@@ -19,7 +19,7 @@ jobs:
 
       # Install the python needed
       - name: setup python
-        uses: actions/setup-python@v2        
+        uses: actions/setup-python@v2
         with:
           python-version: 3.8 
       
@@ -49,4 +49,5 @@ jobs:
         with:
           github_token: ${{ secrets.API_TOKEN_GITHUB }} # GITHUB_TOKEN
           branch: ${{ github.ref }}
-          
+
+# Updates were rejected because the remote contains work that you do hint: not have locally. This is usually caused by another repository pushing
