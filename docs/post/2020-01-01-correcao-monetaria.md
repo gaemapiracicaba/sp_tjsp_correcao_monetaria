@@ -1,5 +1,5 @@
 ---
-title: "Correção Monetária"
+title: "Correção Monetária de Débitos Judiciais"
 date: 2021-11-01T12:00:00-03:00
 last_modified_at: 2021-12-08T12:00:00-03:00
 excerpt_separator: "<!--more-->"
@@ -25,10 +25,6 @@ header:
     - label: "GitHub"
       url: "https://github.com/gaemapiracicaba/correcao_monetaria"
 ---
-
-# Correção Monetária de Débitos Judiciais
-
-<br>
 
 O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
