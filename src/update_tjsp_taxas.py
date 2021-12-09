@@ -14,7 +14,7 @@ def create_dataframe_tjsp_debitos(input_path):
     r = requests.get(url, allow_redirects=True)
 
     # Save PDF file
-    open(os.path.join(input_path, os.path.basename(url)), 'wb').write(r.content)
+    open(os.path.join(input_path, 'tabela_debitos_judiciais.pdf'), 'wb').write(r.content)
 
     # Read PDF
     #dfs = tabula.read_pdf(os.path.join('data', 'tab_tjsp.pdf'), pages='all')
@@ -89,27 +89,5 @@ def create_dataframe_tjsp_debitos(input_path):
     print(df.tail(3))
     return df
 
-
 if __name__ == "__main__":
     print('main!')
-    
-    # Create Directory and Save file
-    #input_path = os.path.join('..', 'data')
-    input_path = os.path.join('data')
-    print('Teste 1')
-    print(os.path.isdir('data'))
-    os.makedirs(input_path, exist_ok=True)
-    print('Teste 2')
-    print(os.path.isdir('data'))
-
-    # Create Dataframe
-    df = create_dataframe_tjsp_debitos(input_path)
-
-    # Save "tabela_debitos_judiciais"
-    df.to_csv(
-        os.path.join(input_path, 'tabela_debitos_judiciais.csv'),
-        index=False,
-        decimal=',',
-    )
-
-    print("Save Ok!")
