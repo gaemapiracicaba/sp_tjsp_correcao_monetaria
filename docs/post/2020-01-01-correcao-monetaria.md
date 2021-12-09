@@ -26,8 +26,7 @@ header:
       url: "https://sistemainfoaguas.cetesb.sp.gov.br/"
 ---
 
-O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*.
-- [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf)
+O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
 <br>
 
@@ -59,12 +58,10 @@ Visando auxiliar essa etapa, [_já foi criada uma tabela com a função_](https:
 
 ### *Microsoft Excel*
 
-Descrever...
+... descrever...
 
 <br>
 
 É possível também acessar a tabela em formatos *.csv* e *.pdf* nos botões abaixo:
 
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download *csv*</a>
-
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary">Download *pdf*</a>
+<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download *csv*</a>  <a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary">Download *pdf*</a>
