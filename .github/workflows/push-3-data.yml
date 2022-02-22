@@ -1,6 +1,5 @@
 name: Data
 
-
 on:
   workflow_run:
     workflows:
