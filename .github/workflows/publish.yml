@@ -27,7 +27,6 @@ jobs:
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF   
 
 
-jobs:
   build_2_imgs:
     runs-on: ubuntu-latest
     needs: [build_1_post]
@@ -52,7 +51,6 @@ jobs:
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
 
 
-jobs:
   build_3_data:
     runs-on: ubuntu-latest
     needs: [build_1_post, build_2_imgs]
