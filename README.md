@@ -20,7 +20,7 @@ O arquivo _.csv_ disponível no servidor é atualizado todas as terças-feiras e
 
 Uma vez que o arquivo _.csv_ está disponível em um servidor, é possível utilizar a função **_=IMPORTDATA()_** do _Google Spreadsheets_ para acessa-lo diretamente na tabela, possibilitando cálculos etc.
 
-![](https://i.imgur.com/oFdGGbA.png)
+![Google Spreadsheets](https://i.imgur.com/oFdGGbA.png)
 
 <br>
 
