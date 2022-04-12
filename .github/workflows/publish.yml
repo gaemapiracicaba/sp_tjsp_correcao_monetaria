@@ -1,0 +1,77 @@
+name: publish
+
+on:
+  push:
+    branches: [ main ]
+
+
+jobs:
+  build_1_post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pushes POST to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'docs/post'
+          user-name: michelmetran
+          user-email: michelmetran@gmail.com
+
+          destination-github-username: 'gaemapiracicaba'
+          destination-repository-name: 'gaemapiracicaba.github.io'
+          target-branch: master
+          target-directory: /_posts/correcao_monetaria
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF   
+
+
+jobs:
+  build_2_imgs:
+    runs-on: ubuntu-latest
+    needs: [build_1_post]
+    if: always()
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pushes IMGS to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'docs/imgs'
+          user-name: michelmetran
+          user-email: michelmetran@gmail.com
+
+          destination-github-username: 'gaemapiracicaba'
+          destination-repository-name: 'gaemapiracicaba.github.io'
+          target-branch: master
+          target-directory: /assets/correcao_monetaria/imgs
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+
+
+jobs:
+  build_3_data:
+    runs-on: ubuntu-latest
+    needs: [build_1_post, build_2_imgs]
+    if: always()
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pushes DATA to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'data'
+          user-name: michelmetran
+          user-email: michelmetran@gmail.com
+
+          destination-github-username: 'gaemapiracicaba'
+          destination-repository-name: 'gaemapiracicaba.github.io'
+          target-branch: master
+          target-directory: /assets/correcao_monetaria/data
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
