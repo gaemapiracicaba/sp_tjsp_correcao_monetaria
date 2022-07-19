@@ -6,7 +6,7 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
-import tjsp_update
+from tjsp.tjsp_update import get_table
 
 
 def get_local_table():
@@ -36,7 +36,7 @@ def get_tjsp_from_date(date, update_table=False):
     if not update_table:
         df = get_local_table()
     else:
-        df = tjsp_update.get_table()
+        df = get_table()
 
     # Json
     mask = (df['mes'] == date_fix.month) & (df['ano'] >= date_fix.year)
