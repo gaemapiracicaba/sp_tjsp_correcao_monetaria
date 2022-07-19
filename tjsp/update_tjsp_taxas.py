@@ -9,10 +9,6 @@ from io import BytesIO
 from pathlib import Path
 
 
-sys.path.append(str(Path('.').resolve().parent))
-from tjsp.paths import *
-
-
 def create_dataframe_tjsp_debitos(input_path):
     # Requests
     url = 'https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf'
