@@ -64,7 +64,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'data'
+          source-directory: 'tjsp/data'
           user-name: michelmetran
           user-email: michelmetran@gmail.com
 
