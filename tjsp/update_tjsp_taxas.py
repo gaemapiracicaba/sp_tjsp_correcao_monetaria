@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import os
+import sys
 import tabula
 import requests
 import pandas as pd
 from io import BytesIO
+from pathlib import Path
+
+
+sys.path.append(str(Path('.').resolve().parent))
+from tjsp.paths import *
 
 
 def create_dataframe_tjsp_debitos(input_path):
@@ -14,10 +19,10 @@ def create_dataframe_tjsp_debitos(input_path):
     r = requests.get(url, allow_redirects=True)
 
     # Save PDF file
-    open(os.path.join(input_path, 'tabela_debitos_judiciais.pdf'), 'wb').write(r.content)
+    open(input_path / 'tabela_debitos_judiciais.pdf', 'wb').write(r.content)
 
     # Read PDF
-    #dfs = tabula.read_pdf(os.path.join('data', 'tab_tjsp.pdf'), pages='all')
+    #dfs = tabula.read_pdf(input_path / 'tabela_debitos_judiciais.pdf'), pages='all')
     dfs = tabula.read_pdf(BytesIO(r.content), pages='all')
 
     # Loop
@@ -89,5 +94,3 @@ def create_dataframe_tjsp_debitos(input_path):
     print(df.tail(3))
     return df
 
-if __name__ == '__main__':
-    print('main!')
