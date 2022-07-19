@@ -16,7 +16,7 @@ def get_local_table():
     data_path = project_path / 'tjsp' / 'data'
     data_path.mkdir(exist_ok=True)
 
-    # ddd
+    # Read Data
     df = pd.read_csv(
         data_path / 'tabela_debitos_judiciais.csv',
         parse_dates=['data'],

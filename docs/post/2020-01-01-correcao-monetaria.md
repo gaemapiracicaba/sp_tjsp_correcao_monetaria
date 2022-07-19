@@ -26,7 +26,7 @@ header:
       url: "https://github.com/gaemapiracicaba/correcao_monetaria"
 ---
 
-O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato *.pdf*, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
+O [Tribunal de Justiça do Estado de São Paulo](https://www.tjsp.jus.br/) disponibiliza mensalmente as taxas para calcular a correção monetária de multas e débitos judiciais. As taxas atualizadas são divulgadas por meio de um arquivo em formato _.pdf_, intitulado [TabelaDebitosJudiciais.pdf](https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf).
 
 O repositório [gaemapiracicaba/correcao_monetaria](https://github.com/gaemapiracicaba/correcao_monetaria) objetivou criar uma função para converter esse arquivo _.pdf_ em formato tabular (_.csv_) e disponibilizar isso de maneira facilitada, por meio de um servidor, com atualização periódica!
 
@@ -40,7 +40,7 @@ O arquivo _.csv_ disponível no servidor é atualizado todas as terças-feiras e
 
 <br>
 
-### *Google Spreadsheets*
+### _Google Spreadsheets_
 
 Uma vez que o arquivo _.csv_ está disponível em um servidor, é possível utilizar a função **_=IMPORTDATA()_** do _Google Spreadsheets_ para acessa-lo diretamente na tabela, possibilitando cálculos etc.
 
@@ -50,13 +50,13 @@ Uma vez que o arquivo _.csv_ está disponível em um servidor, é possível util
 
 Visando auxiliar essa etapa, **já foi criada uma tabela com a função**, bastando criar uma cópia da tabela para sua conta _Google_.
 
-<a href="https://docs.google.com/spreadsheets/d/1xOH1QN8qsZ3-_u6p1dbhIZ2N4IvSBbMJucM1BhXf8Sw/edit?usp=sharing" class="btn btn--primary">*Google Spreadsheets*</a>  
+<a href="https://docs.google.com/spreadsheets/d/1xOH1QN8qsZ3-_u6p1dbhIZ2N4IvSBbMJucM1BhXf8Sw/edit?usp=sharing" class="btn btn--primary">_Google Spreadsheets_</a>
 
 <br>
 
-### *Microsoft Excel*
+### _Microsoft Excel_
 
-No *Microsoft Excel* é possível também manter o arquivo atualizado em uma aba, por meio dos passos abaixo:
+No _Microsoft Excel_ é possível também manter o arquivo atualizado em uma aba, por meio dos passos abaixo:
 
 ![](/assets/correcao_monetaria/imgs/excel.gif)
 
@@ -64,7 +64,7 @@ No *Microsoft Excel* é possível também manter o arquivo atualizado em uma aba
 
 ### Outros Formatos
 
-É possível também acessar a tabela em formatos *.csv* e *.pdf* nos botões abaixo:
+É possível também acessar a tabela em formatos _.csv_ e _.pdf_ nos botões abaixo:
 
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download *csv*</a>  
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download *pdf*</a>
+<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download _csv_</a>  
+<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download _pdf_</a>
