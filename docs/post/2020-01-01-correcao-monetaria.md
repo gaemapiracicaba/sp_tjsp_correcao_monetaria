@@ -68,3 +68,22 @@ No _Microsoft Excel_ é possível também manter o arquivo atualizado em uma aba
 
 <a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download _csv_</a>  
 <a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download _pdf_</a>
+
+<br>
+
+### Python
+
+```python
+# Instala
+!pip3 install tjsp --upgrade
+
+# Pega Tabela (Local)
+df_tjsp = tjsp.get_local_table()
+
+# Pega Taxa TJSP para um dado dia
+tjsp.get_tjsp_from_date(date='2018-09-15', update_table=False)
+```
+
+<br>
+
+Para testar fiz um [Google Colab](https://colab.research.google.com/drive/1IiHtNCmdtiq18npCNX4VBy__P2LO1NvZ?usp=sharing)
