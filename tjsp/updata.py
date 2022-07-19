@@ -3,7 +3,7 @@
 
 from paths import *
 from datetime import datetime
-import update_tjsp_taxas as tjsp
+import tjsp_update as tjsp
 
 
 # Only to change
@@ -13,7 +13,7 @@ with open(data_path / 'date.txt', 'w') as f:
 
 
 # Create Dataframe
-df = tjsp.create_dataframe_tjsp_debitos(data_path)
+df = tjsp.get_table()
 
 
 # Save "tabela_debitos_judiciais"

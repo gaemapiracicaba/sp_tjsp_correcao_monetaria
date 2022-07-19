@@ -6,19 +6,33 @@ import tabula
 import requests
 import pandas as pd
 from io import BytesIO
+
+
 from pathlib import Path
 
 
-def create_dataframe_tjsp_debitos(input_path):
+def get_data():
     # Requests
     url = 'https://www.tjsp.jus.br/Download/Tabelas/TabelaDebitosJudiciais.pdf'
     r = requests.get(url, allow_redirects=True)
+    return r
+
+
+def save_pdf(input_path):
+    # Requests
+    r = get_data()
 
     # Save PDF file
     open(input_path / 'tabela_debitos_judiciais.pdf', 'wb').write(r.content)
 
+    return 0
+
+
+def get_table():
+    # Requests
+    r = get_data()
+
     # Read PDF
-    #dfs = tabula.read_pdf(input_path / 'tabela_debitos_judiciais.pdf'), pages='all')
     dfs = tabula.read_pdf(BytesIO(r.content), pages='all')
 
     # Loop
@@ -86,7 +100,5 @@ def create_dataframe_tjsp_debitos(input_path):
     df.sort_values('data', inplace=True)
     df = df.reindex(columns=['data', 'data_ref', 'ano', 'mes', 'taxa_string', 'taxa'], copy=True)
     df.reset_index(drop=True, inplace=True)
-
-    print(df.tail(3))
     return df
 

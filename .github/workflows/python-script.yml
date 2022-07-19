@@ -29,7 +29,7 @@ jobs:
       # python ./src/update_tjsp_taxas.py      
       - name: execute py script
         run: |
-          python ./src/paths.py
+          python ./tjsp/update.py
 
       # Git Add and Commit
       - name: commit files
