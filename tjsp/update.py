@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+
+"""
 
 from paths import *
 from datetime import datetime
@@ -22,3 +23,6 @@ df.to_csv(
     index=False,
     decimal=',',
 )
+
+
+
