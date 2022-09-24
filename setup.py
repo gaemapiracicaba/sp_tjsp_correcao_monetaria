@@ -9,7 +9,7 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 6)  # (1, 0, 7, 'dev0')
+VERSION = (0, 0, 7)  # (1, 0, 7, 'dev0')
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
